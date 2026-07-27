@@ -1,8 +1,10 @@
 name: Deploy to Namecheap
 
+# Manual-only while the real site is under construction: push commits keep
+# saving progress to git without publishing it live. Run this workflow by
+# hand (Actions tab -> Deploy to Namecheap -> Run workflow) when ready to
+# go live, or restore the `push: branches: [main]` trigger.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
