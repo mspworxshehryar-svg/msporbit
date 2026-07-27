@@ -46,3 +46,6 @@ dev-server.bat
 
 # unrelated leftover file, not part of this project
 /files.zip
+
+# source photo (raw/original) kept locally, processed copy lives in public/images/
+/mainimg1.jpg

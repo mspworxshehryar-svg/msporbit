@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services, siteConfig } from "@/lib/site-config";
 
@@ -166,28 +167,14 @@ export default function Home() {
       <section className="py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
-            <div className="rounded-2xl border border-line bg-white p-2">
-              <div className="rounded-xl bg-blue-tint p-6">
-                <div className="flex items-center justify-between border-b border-line pb-3">
-                  <span className="text-xs font-bold uppercase tracking-wide text-brand-blue">
-                    Live status
-                  </span>
-                  <span className="flex items-center gap-1.5 text-xs font-semibold text-gold-deep">
-                    <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-                    Monitoring
-                  </span>
-                </div>
-                <div className="mt-4 space-y-3">
-                  {["Network uptime", "Endpoint patching", "Backup verification"].map((row) => (
-                    <div key={row} className="flex items-center justify-between text-sm">
-                      <span className="text-ink-soft">{row}</span>
-                      <span className="rounded-full bg-white px-2.5 py-0.5 text-xs font-semibold text-blue-deep">
-                        Healthy
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="overflow-hidden rounded-2xl border border-line">
+              <Image
+                src="/images/office.jpg"
+                alt={`${siteConfig.name} team at work`}
+                width={1600}
+                height={1067}
+                className="h-auto w-full object-cover"
+              />
             </div>
           </div>
           <div className="order-1 lg:order-2">
