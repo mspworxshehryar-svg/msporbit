@@ -4,7 +4,7 @@ import { services, siteConfig } from "@/lib/site-config";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#080d18] text-slate-400">
+    <footer className="border-t border-line bg-ink text-white/60">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Image
@@ -22,7 +22,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {services.slice(0, 5).map((s) => (
               <li key={s.slug}>
-                <Link href={`/services#${s.slug}`} className="hover:text-white">
+                <Link href={`/services#${s.slug}`} className="hover:text-gold">
                   {s.name}
                 </Link>
               </li>
@@ -34,13 +34,13 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Company</h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <Link href="/about" className="hover:text-white">About</Link>
+              <Link href="/about" className="hover:text-gold">About</Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-white">Services</Link>
+              <Link href="/services" className="hover:text-gold">Services</Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-white">Contact</Link>
+              <Link href="/contact" className="hover:text-gold">Contact</Link>
             </li>
           </ul>
         </div>
@@ -49,12 +49,12 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Get in Touch</h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <a href={`tel:${siteConfig.phone}`} className="hover:text-white">
+              <a href={`tel:${siteConfig.phone}`} className="hover:text-gold">
                 {siteConfig.phoneFormatted}
               </a>
             </li>
             <li>
-              <a href={`mailto:${siteConfig.email}`} className="hover:text-white">
+              <a href={`mailto:${siteConfig.email}`} className="hover:text-gold">
                 {siteConfig.email}
               </a>
             </li>

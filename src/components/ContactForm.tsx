@@ -36,9 +36,9 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-sky-400/30 bg-sky-500/10 p-8 text-center">
-        <h3 className="text-xl font-semibold text-white">Message sent</h3>
-        <p className="mt-2 text-sm text-slate-300">
+      <div className="rounded-2xl border border-gold/30 bg-gold-tint p-8 text-center">
+        <h3 className="text-xl font-semibold text-blue-deep">Message sent</h3>
+        <p className="mt-2 text-sm text-ink-soft">
           Thanks for reaching out. We&apos;ll get back to you shortly.
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function ContactForm() {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="text-sm font-medium text-slate-300">
+          <label htmlFor="name" className="text-sm font-medium text-ink-soft">
             Name
           </label>
           <input
@@ -67,12 +67,12 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            className="mt-2 w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+            className="mt-2 w-full rounded-lg border border-line bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand-blue focus:outline-none"
             placeholder="Jane Smith"
           />
         </div>
         <div>
-          <label htmlFor="email" className="text-sm font-medium text-slate-300">
+          <label htmlFor="email" className="text-sm font-medium text-ink-soft">
             Email
           </label>
           <input
@@ -80,7 +80,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="mt-2 w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+            className="mt-2 w-full rounded-lg border border-line bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand-blue focus:outline-none"
             placeholder="jane@company.com"
           />
         </div>
@@ -88,33 +88,33 @@ export default function ContactForm() {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="phone" className="text-sm font-medium text-slate-300">
+          <label htmlFor="phone" className="text-sm font-medium text-ink-soft">
             Phone
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
-            className="mt-2 w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+            className="mt-2 w-full rounded-lg border border-line bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand-blue focus:outline-none"
             placeholder="(555) 555-5555"
           />
         </div>
         <div>
-          <label htmlFor="company" className="text-sm font-medium text-slate-300">
+          <label htmlFor="company" className="text-sm font-medium text-ink-soft">
             Company
           </label>
           <input
             id="company"
             name="company"
             type="text"
-            className="mt-2 w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+            className="mt-2 w-full rounded-lg border border-line bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand-blue focus:outline-none"
             placeholder="Company name"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="message" className="text-sm font-medium text-slate-300">
+        <label htmlFor="message" className="text-sm font-medium text-ink-soft">
           How can we help?
         </label>
         <textarea
@@ -122,13 +122,13 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="mt-2 w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+          className="mt-2 w-full rounded-lg border border-line bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand-blue focus:outline-none"
           placeholder="Tell us a bit about your business and what you need help with."
         />
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-400">
+        <p className="text-sm text-red-600">
           Something went wrong sending your message. Please try again, or email us directly.
         </p>
       )}
@@ -136,7 +136,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-sky-400 disabled:opacity-60"
+        className="rounded-full bg-blue-deep px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink disabled:opacity-60"
       >
         {status === "submitting" ? "Sending..." : "Send Message"}
       </button>

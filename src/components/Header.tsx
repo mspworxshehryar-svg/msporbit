@@ -16,7 +16,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b1120]/95 backdrop-blur supports-[backdrop-filter]:bg-[#0b1120]/80">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center">
           <Image
@@ -34,7 +34,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+              className="text-sm font-medium text-ink-soft transition-colors hover:text-blue-deep"
             >
               {link.label}
             </Link>
@@ -44,20 +44,20 @@ export default function Header() {
         <div className="hidden items-center gap-4 md:flex">
           <a
             href={`tel:${siteConfig.phone}`}
-            className="text-sm font-medium text-slate-300 hover:text-white"
+            className="text-sm font-medium text-ink-soft hover:text-blue-deep"
           >
             {siteConfig.phoneFormatted}
           </a>
           <Link
             href="/contact"
-            className="rounded-full bg-sky-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-sky-400"
+            className="rounded-full bg-blue-deep px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-ink"
           >
             Get a Quote
           </Link>
         </div>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-md text-slate-300 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md text-ink-soft md:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -82,24 +82,24 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#0b1120] px-6 py-4 md:hidden">
+        <div className="border-t border-line bg-paper px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-300 hover:text-white"
+                className="text-sm font-medium text-ink-soft hover:text-blue-deep"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <a href={`tel:${siteConfig.phone}`} className="text-sm font-medium text-slate-300">
+            <a href={`tel:${siteConfig.phone}`} className="text-sm font-medium text-ink-soft">
               {siteConfig.phoneFormatted}
             </a>
             <Link
               href="/contact"
-              className="rounded-full bg-sky-500 px-5 py-2 text-center text-sm font-semibold text-white"
+              className="rounded-full bg-blue-deep px-5 py-2 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >
               Get a Quote
