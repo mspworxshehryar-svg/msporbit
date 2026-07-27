@@ -10,6 +10,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand palette, drawn from the MSP Orbit logo */
+  --color-paper: #fcfcfa;
+  --color-ink: #172036;
+  --color-ink-soft: #4a5268;
+  --color-gold: #f0a824;
+  --color-gold-deep: #a9670c;
+  --color-gold-tint: #fdf1dc;
+  --color-brand-blue: #4c6fa8;
+  --color-blue-deep: #202d4d;
+  --color-blue-tint: #eef2f8;
+  --color-line: #e4e1d8;
 }
 
 @media (prefers-color-scheme: dark) {
