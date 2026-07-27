@@ -46,8 +46,9 @@ export default function Home() {
               {siteConfig.tagline}
             </h1>
             <p className="mt-6 text-lg text-slate-400">
-              {siteConfig.name} keeps your technology running so your team can focus on the work
-              that matters &mdash; managed IT, helpdesk, security, and cloud services under one roof.
+              {siteConfig.name}{" "}
+              keeps your technology running so your team can focus on the work that matters
+              &mdash; managed IT, helpdesk, security, and cloud services under one roof.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link

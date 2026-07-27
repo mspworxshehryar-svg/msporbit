@@ -48,9 +48,10 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-white sm:text-3xl">Our Approach</h2>
             <p className="mt-4 text-slate-400">
               Every business runs on technology, but not every business has the time or expertise
-              to manage it well. {siteConfig.name} handles the full picture &mdash; monitoring,
-              maintenance, security, and support &mdash; so you get the reliability of an in-house
-              IT department without the overhead.
+              to manage it well. {siteConfig.name}{" "}
+              handles the full picture &mdash; monitoring, maintenance, security, and support
+              &mdash; so you get the reliability of an in-house IT department without the
+              overhead.
             </p>
             <p className="mt-4 text-slate-400">
               Whether you need day-to-day helpdesk support, a full network overhaul, or a partner

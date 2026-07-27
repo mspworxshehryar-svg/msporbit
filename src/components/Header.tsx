@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site-config";
@@ -17,14 +18,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b1120]/95 backdrop-blur supports-[backdrop-filter]:bg-[#0b1120]/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-white">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sky-400">
-            <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
-              <circle cx="12" cy="12" r="3" fill="currentColor" />
-              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
-          </span>
-          {siteConfig.name}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt={siteConfig.name}
+            width={2385}
+            height={1074}
+            priority
+            className="h-9 w-auto sm:h-10"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

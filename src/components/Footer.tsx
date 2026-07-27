@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services, siteConfig } from "@/lib/site-config";
 
@@ -6,15 +7,13 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-[#080d18] text-slate-400">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 text-lg font-bold text-white">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sky-400">
-              <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
-                <circle cx="12" cy="12" r="3" fill="currentColor" />
-                <ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
-            </span>
-            {siteConfig.name}
-          </div>
+          <Image
+            src="/logo.png"
+            alt={siteConfig.name}
+            width={2385}
+            height={1074}
+            className="h-9 w-auto"
+          />
           <p className="mt-3 text-sm">{siteConfig.tagline}</p>
         </div>
 
