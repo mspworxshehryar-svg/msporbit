@@ -25,7 +25,7 @@ export default function Header() {
             width={2385}
             height={1074}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="h-12 w-auto sm:h-14"
           />
         </Link>
 
@@ -34,7 +34,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink-soft transition-colors hover:text-blue-deep"
+              className="text-base font-medium text-ink-soft transition-colors hover:text-blue-deep"
             >
               {link.label}
             </Link>
@@ -88,7 +88,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-ink-soft hover:text-blue-deep"
+                className="text-base font-medium text-ink-soft hover:text-blue-deep"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
