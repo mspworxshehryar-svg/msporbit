@@ -27,13 +27,13 @@ export default function Header() {
         <nav className="hidden items-center gap-8 md:flex">
           <Link
             href="/"
-            className="text-base font-medium text-ink-soft transition-colors hover:text-blue-deep"
+            className="relative pb-1 text-base font-medium text-ink-soft transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-200 hover:text-blue-deep hover:after:w-full"
           >
             Home
           </Link>
 
           <div className="group relative">
-            <button className="flex items-center gap-1.5 text-base font-medium text-ink-soft transition-colors hover:text-blue-deep">
+            <button className="relative flex items-center gap-1.5 pb-1 text-base font-medium text-ink-soft transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-200 hover:text-sun-deep group-hover:after:w-full">
               Services
               <svg viewBox="0 0 20 20" fill="none" className="mt-0.5 h-3.5 w-3.5">
                 <path
@@ -63,13 +63,13 @@ export default function Header() {
 
           <Link
             href="/about"
-            className="text-base font-medium text-ink-soft transition-colors hover:text-blue-deep"
+            className="relative pb-1 text-base font-medium text-ink-soft transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-200 hover:text-blue-deep hover:after:w-full"
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="text-base font-medium text-ink-soft transition-colors hover:text-blue-deep"
+            className="relative pb-1 text-base font-medium text-ink-soft transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-200 hover:text-blue-deep hover:after:w-full"
           >
             Contact
           </Link>
@@ -127,7 +127,7 @@ export default function Header() {
             </Link>
 
             <button
-              className="flex items-center justify-between py-2 text-base font-medium text-ink-soft hover:text-blue-deep"
+              className="flex items-center justify-between py-2 text-base font-medium text-ink-soft hover:text-sun-deep"
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               aria-expanded={mobileServicesOpen}
             >

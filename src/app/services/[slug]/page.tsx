@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { serviceIcons } from "@/components/service-icons";
 import { services, siteConfig } from "@/lib/site-config";
 
 type Params = { slug: string };
@@ -38,7 +37,7 @@ export default async function ServiceDetailPage({
 
   return (
     <div className="bg-paper">
-      <section className="border-b border-line py-14 sm:py-18">
+      <section className="border-b border-line py-10 sm:py-14">
         <div className="mx-auto max-w-4xl px-6">
           <Link
             href="/#services"
@@ -47,14 +46,20 @@ export default async function ServiceDetailPage({
             &larr; All services
           </Link>
 
-          <div className="mt-6 flex items-start gap-5">
-            <span className="inline-flex h-16 w-16 flex-none items-center justify-center rounded-xl border border-slate-200 bg-slate-100 text-slate-500">
-              <span className="h-8 w-8">{serviceIcons[service.slug]}</span>
-            </span>
-            <div>
-              <h1 className="text-3xl font-bold text-blue-deep sm:text-4xl">{service.name}</h1>
-              <p className="mt-2 text-lg text-ink-soft">{service.short}</p>
-            </div>
+          <div className="mt-6 overflow-hidden rounded-2xl border border-line">
+            <Image
+              src={service.bannerImage}
+              alt={service.name}
+              width={1600}
+              height={900}
+              priority
+              className="h-56 w-full object-cover sm:h-72"
+            />
+          </div>
+
+          <div className="mt-6">
+            <h1 className="text-3xl font-bold text-blue-deep sm:text-4xl">{service.name}</h1>
+            <p className="mt-2 text-lg text-ink-soft">{service.short}</p>
           </div>
         </div>
       </section>

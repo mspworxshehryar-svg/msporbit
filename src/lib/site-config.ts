@@ -14,6 +14,7 @@ export type Service = {
   short: string;
   description: string;
   features: string[];
+  bannerImage: string;
   importance: string[];
   benefits: { title: string; body: string }[];
 };
@@ -21,6 +22,7 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "managed-it",
+    bannerImage: "/images/svc-managed-it.jpg",
     name: "Managed IT",
     short: "Proactive, all-in-one IT management so your systems just work.",
     description:
@@ -45,6 +47,7 @@ export const services: Service[] = [
   },
   {
     slug: "white-label-helpdesk",
+    bannerImage: "/images/svc-white-label-helpdesk.jpg",
     name: "White-Label Helpdesk",
     short: "Helpdesk support delivered under your own brand.",
     description:
@@ -69,6 +72,7 @@ export const services: Service[] = [
   },
   {
     slug: "network-server-management",
+    bannerImage: "/images/svc-network-server-management.jpg",
     name: "Network & Server Management",
     short: "Reliable, secure infrastructure that keeps the lights on.",
     description:
@@ -93,6 +97,7 @@ export const services: Service[] = [
   },
   {
     slug: "device-management",
+    bannerImage: "/images/svc-device-management.jpg",
     name: "Device Management",
     short: "Every laptop, desktop, and mobile device, managed centrally.",
     description:
@@ -117,6 +122,7 @@ export const services: Service[] = [
   },
   {
     slug: "onboarding-offboarding",
+    bannerImage: "/images/svc-onboarding-offboarding.jpg",
     name: "Employee On/Offboarding",
     short: "New hires ready on day one. Departures handled securely.",
     description:
@@ -141,6 +147,7 @@ export const services: Service[] = [
   },
   {
     slug: "cloud-migration",
+    bannerImage: "/images/svc-cloud-migration.jpg",
     name: "Cloud Migration",
     short: "Move to the cloud without disrupting the business.",
     description:
@@ -165,6 +172,7 @@ export const services: Service[] = [
   },
   {
     slug: "web-development",
+    bannerImage: "/images/svc-web-development.jpg",
     name: "Web Development",
     short: "A fast, professional website that represents your business.",
     description:
@@ -189,6 +197,7 @@ export const services: Service[] = [
   },
   {
     slug: "virtual-desktops",
+    bannerImage: "/images/svc-virtual-desktops.jpg",
     name: "Virtual Desktops",
     short: "Secure, work-from-anywhere desktops in the cloud.",
     description:
