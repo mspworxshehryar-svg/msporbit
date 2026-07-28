@@ -129,6 +129,30 @@ export default async function ServiceDetailPage({
         </div>
       </section>
 
+      <section className="border-y border-line bg-white py-14 sm:py-18">
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className="text-xl font-bold text-blue-deep">What clients say</h2>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
+            {service.reviews.map((review) => (
+              <div key={review.author} className="rounded-2xl border border-line bg-paper p-6">
+                <div className="flex gap-0.5 text-gold">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+                      <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="mt-3 text-sm text-ink-soft">&ldquo;{review.quote}&rdquo;</p>
+                <p className="mt-4 text-sm font-semibold text-blue-deep">
+                  {review.author}{" "}
+                  <span className="font-normal text-ink-soft">&mdash; {review.title}</span>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-line bg-blue-deep py-14 sm:py-16">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">

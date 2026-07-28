@@ -17,6 +17,7 @@ export type Service = {
   bannerImage: string;
   importance: string[];
   benefits: { title: string; body: string }[];
+  reviews: { quote: string; author: string; title: string }[];
 };
 
 export const services: Service[] = [
@@ -44,6 +45,11 @@ export const services: Service[] = [
       { title: "Predictable costs", body: "Flat monthly pricing replaces unpredictable break-fix bills, so IT becomes a budget line you can actually plan around." },
       { title: "Time back for your team", body: "Your staff stop troubleshooting printers and password resets, and get back to the work that actually grows the business." },
     ],
+    reviews: [
+      { quote: "MSP Orbit completely changed how we manage IT. Instead of constantly reacting to issues, everything is proactively monitored and maintained. Our downtime has dropped dramatically, and their team is always quick to respond.", author: "Sarah M.", title: "Operations Director" },
+      { quote: "Their Managed IT service feels like having an in-house IT department without the overhead. Reliable, knowledgeable, and always available when we need them.", author: "James L.", title: "Business Owner" },
+    ],
+
   },
   {
     slug: "white-label-helpdesk",
@@ -69,6 +75,11 @@ export const services: Service[] = [
       { title: "Tiered expertise on demand", body: "Tier 1 through tier 3 support means routine tickets get resolved fast, and complex issues still get expert attention." },
       { title: "Lower overhead", body: "Skip the cost of benefits, training, and management for an in-house support team you'd otherwise need to build." },
     ],
+    reviews: [
+      { quote: "We partnered with MSP Orbit for white-label support, and our clients genuinely believe they're speaking with our own technicians. Professional communication and excellent response times have helped us scale our business.", author: "David R.", title: "MSP Founder" },
+      { quote: "Their team represents our brand flawlessly. Ticket resolution is fast, and our customer satisfaction scores have improved since outsourcing to MSP Orbit.", author: "Emily T.", title: "Service Manager" },
+    ],
+
   },
   {
     slug: "network-server-management",
@@ -94,6 +105,11 @@ export const services: Service[] = [
       { title: "Reliable backups", body: "Verified, tested backups mean a hardware failure or ransomware incident is a recovery story, not a disaster." },
       { title: "Infrastructure that scales", body: "Capacity planning means your network grows with your headcount instead of becoming a bottleneck." },
     ],
+    reviews: [
+      { quote: "Our network has been rock-solid since MSP Orbit took over. They proactively identify potential issues before they become problems, giving us complete peace of mind.", author: "Michael C.", title: "IT Manager" },
+      { quote: "Server maintenance used to consume our weekends. MSP Orbit automated and optimized everything, keeping our infrastructure secure and running efficiently.", author: "Lisa P.", title: "Systems Administrator" },
+    ],
+
   },
   {
     slug: "device-management",
@@ -119,6 +135,11 @@ export const services: Service[] = [
       { title: "Painless audits", body: "A full, current inventory of devices and their configurations is available on demand, not assembled under deadline pressure." },
       { title: "Lower device lifecycle costs", body: "Proactive maintenance and clear asset tracking extend device lifespan and simplify budgeting for replacements." },
     ],
+    reviews: [
+      { quote: "Managing hundreds of laptops across multiple offices used to be a challenge. MSP Orbit made device deployment, updates, and security effortless.", author: "Kevin H.", title: "HR Director" },
+      { quote: "Every device stays compliant and up to date without disrupting employees. Their centralized management has saved us countless hours.", author: "Amanda S.", title: "Office Administrator" },
+    ],
+
   },
   {
     slug: "onboarding-offboarding",
@@ -144,6 +165,11 @@ export const services: Service[] = [
       { title: "Clear audit trail", body: "Every access grant and revocation is logged, making compliance reviews and audits straightforward instead of stressful." },
       { title: "Less manual work for managers", body: "Role-based provisioning means access is assigned automatically based on job function, not reconstructed from memory." },
     ],
+    reviews: [
+      { quote: "New employees now receive fully configured devices and accounts before their first day. The onboarding experience is seamless, and offboarding is handled securely within minutes.", author: "Rachel D.", title: "HR Manager" },
+      { quote: "MSP Orbit standardized our onboarding process, eliminating missed accounts and security risks. Everything is automated, consistent, and incredibly efficient.", author: "Brian K.", title: "COO" },
+    ],
+
   },
   {
     slug: "cloud-migration",
@@ -169,6 +195,11 @@ export const services: Service[] = [
       { title: "Work from anywhere", body: "Cloud-hosted email, files, and applications mean your team can work securely from any location, not just the office." },
       { title: "Minimal disruption migration", body: "Careful sequencing and verification at each step mean the move happens with little to no impact on daily operations." },
     ],
+    reviews: [
+      { quote: "Migrating to the cloud seemed overwhelming until MSP Orbit handled the entire process. The transition was smooth, with virtually no downtime.", author: "Jennifer W.", title: "Finance Director" },
+      { quote: "Their cloud migration strategy improved collaboration, strengthened security, and reduced our infrastructure costs. We couldn't be happier with the results.", author: "Thomas G.", title: "CEO" },
+    ],
+
   },
   {
     slug: "web-development",
@@ -194,6 +225,11 @@ export const services: Service[] = [
       { title: "Ongoing security and updates", body: "Your site gets the same proactive maintenance as the rest of your IT, instead of being forgotten after launch." },
       { title: "One point of contact", body: "Hosting, domain management, and development all run through the same team already managing your IT." },
     ],
+    reviews: [
+      { quote: "MSP Orbit delivered a modern, responsive website that perfectly represents our brand. The site loads quickly, looks great on every device, and has already increased customer inquiries.", author: "Nicole B.", title: "Marketing Manager" },
+      { quote: "Their development team was communicative throughout the project and delivered exactly what we envisioned. The finished website exceeded our expectations.", author: "Andrew M.", title: "Small Business Owner" },
+    ],
+
   },
   {
     slug: "virtual-desktops",
@@ -219,5 +255,10 @@ export const services: Service[] = [
       { title: "Fast provisioning", body: "New users can be up and running with a fully configured virtual desktop in minutes, not days." },
       { title: "Lower hardware costs", body: "Existing or lower-spec devices can run a virtual desktop just as well as new, high-end hardware, since the heavy lifting happens in the cloud." },
     ],
+    reviews: [
+      { quote: "MSP Orbit's virtual desktop solution gave our remote employees secure access to company resources from anywhere. Performance has been excellent, and setup was incredibly simple.", author: "Chris E.", title: "IT Director" },
+      { quote: "Our team can work from home or the office without missing a beat. The virtual desktop environment is fast, secure, and has simplified IT management significantly.", author: "Olivia N.", title: "Business Operations Manager" },
+    ],
+
   },
 ];
