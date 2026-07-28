@@ -294,8 +294,8 @@ export default function Home() {
                 href={`/services#${service.slug}`}
                 className="group rounded-2xl border border-line bg-paper p-6 transition-colors hover:border-gold/50"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gold-tint text-gold-deep">
-                  <span className="h-5 w-5">{serviceIcons[service.slug]}</span>
+                <span className="inline-flex h-16 w-16 items-center justify-center rounded-xl border border-slate-200 bg-slate-100 text-slate-500 shadow-sm shadow-slate-400/10 transition-colors group-hover:border-gold/50 group-hover:bg-gold-tint group-hover:text-gold-deep">
+                  <span className="h-8 w-8">{serviceIcons[service.slug]}</span>
                 </span>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-brand-blue">
                   {servicePitches[service.slug]}
