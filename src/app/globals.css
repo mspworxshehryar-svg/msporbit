@@ -15,4 +15,9 @@
   --color-blue-deep: #33487c;
   --color-blue-tint: #eef2f8;
   --color-line: #e4e1d8;
+
+  /* Exact yellow sampled from the logo's circle (rgb 255,193,7) */
+  --color-sun: #ffc107;
+  --color-sun-tint: #fff3cf;
+  --color-sun-deep: #8a5d00;
 }
