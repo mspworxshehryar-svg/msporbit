@@ -3,8 +3,8 @@ export const siteConfig = {
   tagline: "IT Support that orbits around you",
   domain: "msporbit.com",
   url: "https://msporbit.com",
-  phone: "9144061119",
-  phoneFormatted: "(914) 406-1119",
+  phone: "8452000747",
+  phoneFormatted: "(845) 200-0747",
   email: "support@msporbit.com",
 };
 
